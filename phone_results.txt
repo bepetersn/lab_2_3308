@@ -1,5 +1,5 @@
 Your file has 767 phone numbers in it.
-All phone numbers beginning with '303', 767 in total: 
+All phone numbers beginning with '303', 406 in total: 
 303-724-1777
 303-441-3330
 303-724-9623
