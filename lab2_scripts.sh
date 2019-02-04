@@ -14,7 +14,7 @@ PHONE_OUTPUT_FILE='phone_results.txt'
 EMAIL_OUTPUT_FILE='email_results.txt'
 
 GIT_AUTO_COMMITS_BEGIN_TAG='begin-auto-commits'
-GIT_REPO_NAME = 'lab_2_3308'
+GIT_REPO_NAME='lab_2_3308'
 
 # 1. Accept a regular expression & file name from the user with a prompt
 echo "What regex would you like to scan for in regex_practice.txt?"
@@ -65,8 +65,8 @@ git add $COMMAND_OUTPUT_FILE
 # Get the number, in the project history, of the commit we're about to make
 let git_current_results_number=$(git rev-list --count $GIT_AUTO_COMMITS_BEGIN_TAG..)+1
 echo "Committing results run #$git_current_results_number"
-read
 git commit -m "New grep regex results #$git_current_results_number -- phone, email, & user-provided regex result"
 
 # 6. Optionally, you can have your script also push your changes to Github.
+echo "Pushing these results to github!"
 git push "https://$git_username:$git_password@github.com/$git_username/$GIT_REPO_NAME"
