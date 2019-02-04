@@ -54,12 +54,12 @@ egrep $second_regex $REGEX_PRACTICE > $COMMAND_OUTPUT_FILE
 echo "Output of just this last regex search were put in $COMMAND_OUTPUT_FILE"
 echo "Finally, let's store the results from this script run. Press enter to save everything to git (except your first regex command, for whatever reason). " 
 # 4. Run git add on your updated text files (phone_results, email_results, command_results). Only these files should be staged!
-#git add $PHONE_OUTPUT_FILE
-#git add $EMAIL_OUTPUT_FILE
-#git add $COMMAND_OUTPUT_FILE
+git add $PHONE_OUTPUT_FILE
+git add $EMAIL_OUTPUT_FILE
+git add $COMMAND_OUTPUT_FILE
 
 # 5. Run git commit, with a default message
-#git commit -m "New grep regex results -- phone results, email results, and a user-generated regex result"
+git commit -m "New grep regex results -- phone results, email results, and a user-generated regex result"
 
 #Optionally, you can have your script also push your changes to Github. You may run into issues running this via a script. Before running the script you can look at temporarily storing your github credentials (github guide)
 #git push origin master
